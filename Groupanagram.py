@@ -40,7 +40,23 @@ class Solution:
 """Approach 2:
 using frequency of letters and then using hashmap to create sublists"""
 
+from typing import List
+from collections import defaultdict
 
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        groups = defaultdict(list)
+
+        for word in strs:
+            count = [0] * 26   # for 'a' to 'z'
+
+            for char in word:
+                count[ord(char) - ord('a')] += 1
+
+            key = tuple(count)   # convert to tuple for hashing
+            groups[key].append(word)
+
+        return list(groups.values())
 
 
 
