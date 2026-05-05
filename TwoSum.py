@@ -21,13 +21,13 @@ Constraints:
 2 <= nums.length <= 1000
 -10,000,000 <= nums[i] <= 10,000,000
 -10,000,000 <= target <= 10,000,000
-"""
+
 
 approach 1:
 Brute Force method with two loops:
 Time complexity: O(n^2)
 space complexity:
-
+"""
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(0, len(nums) - 1):
@@ -40,12 +40,12 @@ class Solution:
                     return output
         return False
 
-
+"""
 approach 2:
 using Hasmap(Dictionary) , calculating difference and using i!=j such that we dont add one element twice
 Time complexity: O(n)
 space complexity: O(n)
-
+"""
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         x = {}
