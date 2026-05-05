@@ -1,4 +1,4 @@
-"""Two Sum
+"""Two Sum easiest problem on leetcode, we can solve this problem using two approaches, one is brute force method and another is using hashmap(dictionary) to store the values and their indices.
 Given an array of integers nums and an integer target, return the indices i and j such that nums[i] + nums[j] == target and i != j.
 You may assume that every input has exactly one pair of indices i and j that satisfy the condition.
 Return the answer with the smaller index first.
